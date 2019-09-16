@@ -10653,6 +10653,10 @@ nav.navbar.navbar-expand-lg {
   margin-bottom: 20px;
 }
 
+nav.navbar.navbar-expand-lg div.dropdown-menu:hover {
+  display: block;
+}
+
 /* footer */
 
 footer {
