@@ -27,7 +27,7 @@ class SessionsController extends Controller
         ]);
 
         if (Auth::attempt($credentials, $request->has('remember'))) {
-            if (Auth::user()->activited) {
+            if (Auth::user()->activated) {
                 session()->flash('success', '欢迎回来！');
                 $fallback = route('users.show', Auth::user());
                 // 当上一次记录为空时，使用fallback
